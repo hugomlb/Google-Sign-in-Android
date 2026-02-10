@@ -2,14 +2,13 @@
 
 ## ¿Por qué estoy escribiendo esto?
 
-Cuando arranqué a hacer apps en **Firebase con Google Sign-In**, me encontré con las configuraciones de los SHA. Al principio funcionaba en desarrollo, pero en producción fallaba porque había otros códigos y entender para qué servía cada uno era un quilombo. Después de chocarme contra un par de paredes, lo terminé solucionando, anoté mis descubrimientos y seguí con mi vida.
+Cuando arranqué a hacer apps en **Firebase con Google Sign-In**, me encontré con las configuraciones de los SHA. Al principio funcionaba en desarrollo, pero en producción fallaba porque había otros códigos y entender para qué servía cada uno era un quilombo. Después de chocarme contra un par de paredes, lo terminé solucionando. Anoté mis descubrimientos y seguí con mi vida.
 
 Hace poco volví a tener que configurar Google Sign-In para un proyecto personal y me encontré con los mismos problemas. Por suerte, tenía anotada la solución, así que el tiempo para resolverlos fue considerablemente menor (y menos doloroso). Sin embargo, esas notas eran más _bullet points_ que un razonamiento del cómo y por qué funciona así. Este artículo busca darle un poco más de contexto a mis notas iniciales.
 
 ## El Stack
 
-Como mencioné antes, las configuraciones de Google Sign-In que hice fueron con *Firebase*, pero lo escrito aquí es lo suficientemente general como para funcionar con cualquier otra plataforma donde lo quieras configurar.
-
+Como mencioné antes, las configuraciones de Google Sign-In que hice fueron con *Firebase*, pero lo escrito aquí es lo suficientemente general como para funcionar con cualquier otra plataforma donde lo quieras configurar (por ejemplo, manualmente en Google Cloud Console).
 ## Un montón de SHAs
 
 Todos tenemos un nombre (yo soy Hugo, vos sos LectorRecopado) e incluso tu app tiene un nombre formal (sería `com.empresafantabulosa.appfantabulosa`, aunque los pibes la llamamos "App Fantabulosa"). Eventualmente, todos tenemos también una firma. Los **SHAs** son como las firmas digitales de la app.
@@ -35,4 +34,4 @@ Ese código SHA-1 que encontrás ahí es el que tenés que pegar en tu proyecto 
 
 # En Conclusión
 
-Entender esas diferencias te ahorrarán muchos dolores de cabeza y, si falla el Google Sign in en producción es probablemente porque todavía tu *App Fantabulosa* no conoce a John Google. 
+Entender esas diferencias te ahorrará muchos dolores de cabeza y, si falla el Google Sign-In en producción, es probablemente porque todavía tu *App Fantabulosa* no conoce a John Google. 
